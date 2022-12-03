@@ -1,0 +1,202 @@
+/* 
+	Global classes 
+*/
+body {
+    font-family: 'Courier New', Courier, sans-serif;
+    max-height: 1000px;
+}
+
+.navbar {
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: white;
+}
+
+.navbar a{
+    color: white;
+}
+
+/* LandingPage */
+
+.landingPage {
+    font-size: 32px;
+}
+.landingPage a{
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+.nav {
+    display: flex;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li:hover {
+    background-color: #00a0a0;
+    border-radius: 5px;
+}
+
+.nav li {
+    display:block;
+    padding: 8px 20px;
+}
+
+/* DROPDOWN MENU */
+
+.projects .bio {
+    position: relative;
+}
+
+.dropdown {
+    font-size: 16px;
+    background-color: rgb(1, 139, 139);
+    padding: 7px;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 65px;
+    right: 320px;
+}
+
+.dropdown li + li {
+    margin: 0px;
+}
+
+.dropdown li {
+    padding: 20px 0px 20px 0px;
+    width: 7em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+.projects:hover .dropdown {
+    display: block;
+}
+
+.projects:focus-within .dropdown {
+    display: block;
+}
+
+
+/*
+    Body projects
+*/
+
+.grid-container {
+	display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.grid-child {
+    border: 1px black solid;
+	margin: 100px;
+    margin-top: 50px;
+    display: block;
+}
+.grid-child img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.grid-child h4{
+    color: black;
+    margin: 5px;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.ttle {
+    margin: 50px 50px 0px 110px;
+}
+.ttle h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/*
+Project1
+*/
+
+.project_info {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 50px 50px 0px 110px;
+    max-width: 500px;
+}
+.project_info h1{
+    margin: 0px;
+}
+.project_info img {
+    width: 100%;
+}
+
+
+/*
+    layout
+*/
+
+.resume{
+    margin: 50px 50px 0px 110px;
+}
+.resume a{
+    color: black;
+}
+
+.bio{
+    margin: 50px 50px 0px 110px;
+}
+
+.bio div{
+    max-width: 1000px;
+}
+
+.bio img{
+    margin: 0px 0px 0px 150px;
+    max-width: 40%;
+    align-content: center;
+}
+
+.contact{
+    margin: 50px 50px 0px 110px;
+}
+
+
+/*
+    Contact
+*/
+
+.form {
+    max-width: 800px;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+}
+
+.form input{
+    margin: 10px;
+}
+
+
+p {
+    font-size: 18px;
+    line-height: 1.8em;    
+}
